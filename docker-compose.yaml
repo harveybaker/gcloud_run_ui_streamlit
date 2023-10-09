@@ -1,0 +1,10 @@
+version: "3.9"
+services:
+  containerimage:
+    build:
+      context: .
+    image: gcloudrunui/streamlit:0.0.0
+    ports:
+      - 8501:8501
+    environment:
+      - TESTENV=${DOTENVVARIABLE}
